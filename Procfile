@@ -1,1 +1,1 @@
-web: python ws_emailcategory.py
+web: python app.py
