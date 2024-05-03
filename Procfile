@@ -1,1 +1,1 @@
-web: python SFS-Demo/app.py
+web: python app.py
