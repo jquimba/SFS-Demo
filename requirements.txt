@@ -1,2 +1,10 @@
+#WebServices
 gunicorn
 Flask
+#TinyBERT
+tqdm
+boto3
+requests
+torch
+scipy
+seaborn
