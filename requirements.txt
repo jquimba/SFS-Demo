@@ -5,6 +5,6 @@ Flask
 #tqdm
 #boto3
 #requests
-torch
+#torch
 #scipy
 #seaborn
