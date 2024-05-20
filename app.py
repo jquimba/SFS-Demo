@@ -30,7 +30,7 @@ def hello_there(name):
     return content
 
 
-@app.route('/ClassifyEmail', methods=['POST'])
+@server.route('/ClassifyEmail', methods=['POST'])
 def recibir_json():
     # Verifica si la solicitud contiene un JSON
     if request.is_json:
@@ -46,4 +46,4 @@ def recibir_json():
         return jsonify({"mensaje": "La solicitud no contiene un JSON válido"}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    server.run(debug=True)
