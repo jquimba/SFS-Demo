@@ -1,6 +1,6 @@
 import re
 import os
-from flask import Flask
+from flask import Flask, request, jsonify
 from datetime import datetime
 
 server = Flask(__name__)
@@ -28,3 +28,22 @@ def hello_there(name):
 
     content = "Hello there, " + clean_name + "! It's " + formatted_now
     return content
+
+
+@app.route('/ClassifyEmail', methods=['POST'])
+def recibir_json():
+    # Verifica si la solicitud contiene un JSON
+    if request.is_json:
+        # Obtiene el JSON de la solicitud
+        data = request.get_json()
+        # Procesa el JSON (puedes agregar tu lógica aquí)
+        response = {
+            "mensaje": "JSON recibido correctamente",
+            "datos_recibidos": data
+        }
+        return jsonify(response), 200
+    else:
+        return jsonify({"mensaje": "La solicitud no contiene un JSON válido"}), 400
+
+if __name__ == '__main__':
+    app.run(debug=True)
