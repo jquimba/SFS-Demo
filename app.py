@@ -29,7 +29,7 @@ def hello_there(name):
     content = "Hello there, " + clean_name + "! It's " + formatted_now
     return content
 
-
+from classify_email.classify_email import classify_email
 @server.route('/ClassifyEmail', methods=['POST'])
 def recibir_json():
     # Verifica si la solicitud contiene un JSON
