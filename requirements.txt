@@ -11,5 +11,3 @@ Flask
 transformers
 --find-links https://download.pytorch.org/whl/torch_stable.html
 torch==2.2.0+cpu
-torchaudio==2.3.0
-torchvision==0.18.0
