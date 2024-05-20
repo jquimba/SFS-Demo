@@ -8,4 +8,4 @@ Flask
 #torch
 #scipy
 #seaborn
-torch==torch-2.2.0%2Bcpu-cp310-cp310-linux_x86_64.whl
+https://download.pytorch.org/whl/cpu/torch-2.2.0%2Bcpu-cp310-cp310-linux_x86_64.whl#sha256=5f907293f5a58619c1c520380f17641f76400a136474a4b1a66c363d2563fe5e
