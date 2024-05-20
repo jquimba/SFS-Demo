@@ -2,9 +2,9 @@
 gunicorn
 Flask
 #TinyBERT
-tqdm
-boto3
-requests
+#tqdm
+#boto3
+#requests
 torch
-scipy
-seaborn
+#scipy
+#seaborn
