@@ -38,8 +38,9 @@ def recibir_json():
         data = request.get_json()
         # Procesa el JSON (puedes agregar tu lógica aquí)
         response = {
-            "mensaje": data["email"],
-            "Type": classify_email(data["email"])
+            "Body": data["Body"],
+            "CaseId": data["CaseId"],
+            "Type": classify_email(data["Body"])
         }
 
         return jsonify(response), 200
