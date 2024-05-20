@@ -38,9 +38,10 @@ def recibir_json():
         data = request.get_json()
         # Procesa el JSON (puedes agregar tu lógica aquí)
         response = {
-            "mensaje": "JSON recibido correctamente",
-            "datos_recibidos": data
+            "mensaje": data["email"],
+            "Type": classify_email(data["email"])
         }
+
         return jsonify(response), 200
     else:
         return jsonify({"mensaje": "La solicitud no contiene un JSON válido"}), 400
