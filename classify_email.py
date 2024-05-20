@@ -18,7 +18,7 @@ def classify_email(text):
     logits = outputs.logits
     prediction = torch.argmax(logits, dim=-1)
     return "spam" if prediction == 0 else "not spam"
-
+"""
 # Ejemplos de clasificación de nuevos correos electrónicos
 new_email1 = "Congratulations! You've Won a $1,000 Gift Card!"
 print(f'Email: {new_email1} -- > Clasificación: {classify_email(new_email1)}')
@@ -46,3 +46,4 @@ print(f'Email: {new_email7} -- > Clasificación: {classify_email(new_email7)}')
 
 new_email8 = "Congratulations ¡Felicidades! Has ganado la lotería. Haz clic aquí para reclamar tu premio"
 print(f'Email: {new_email8} -- > Clasificación: {classify_email(new_email8)}')
+"""
