@@ -8,6 +8,6 @@ Flask
 #torch
 #scipy
 #seaborn
-https://download.pytorch.org/whl/torch-2.0.1-cp39-cp39-manylinux2014_aarch64.whl
+torch==https://download.pytorch.org/whl/torch-2.0.1-cp39-cp39-manylinux2014_aarch64.whl
 torchaudio==2.3.0
 torchvision==0.18.0
