@@ -43,7 +43,7 @@ def recibir_json():
         }
 
         new_email1 = "Congratulations! You've Won a $1,000 Gift Card!"
-        print(f'Email: {new_email1} -- > Clasificación: {classify_email(new_email1)}')
+        print(f'Email: {new_email1} -- > Clasificación: {classify_email.classify_email(new_email1)}')
 
         return jsonify(response), 200
     else:
