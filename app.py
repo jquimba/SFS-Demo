@@ -37,11 +37,12 @@ def recibir_json():
         # Obtiene el JSON de la solicitud
         data = request.get_json()
         # Procesa el JSON (puedes agregar tu lógica aquí)
-        new_email1 = "Congratulations! You've Won a $1,000 Gift Card!"
+        #new_email1 = "Congratulations! You've Won a $1,000 Gift Card!"
         response = {
-            "mensaje": "JSON recibido correctamente",
-            "Type": classify_email.classify_email(new_email1),
-            "datos_recibidos": data
+            "mensaje": "Email procesado correctamente",
+            #"Type": classify_email.classify_email(new_email1),
+            "Type": classify_email.classify_email(data['Body']),
+            "Body": data['Body']
         }
 
         return jsonify(response), 200
